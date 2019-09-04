@@ -1,6 +1,7 @@
 :root {
   --dark-900: #282c34;
 }
+
 body {
   padding: 20px 60px;
   font-family: 'Open Sans Condensed', sans-serif;
@@ -8,6 +9,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+a {
+  text-decoration: none;
+  color: black;
 }
