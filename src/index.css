@@ -2,6 +2,7 @@
   --dark-900: #282c34;
 }
 body {
+  padding: 20px 60px;
   font-family: 'Open Sans Condensed', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
