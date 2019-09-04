@@ -1,0 +1,13 @@
+:root {
+  --dark-900: #282c34;
+}
+body {
+  /* background-color: var(--dark-900); */
+  font-family: 'Open Sans Condensed', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
