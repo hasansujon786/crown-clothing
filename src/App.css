@@ -1,0 +1,19 @@
+:root {
+  --dark-900: #282c34;
+}
+* {
+  box-sizing: inherit;
+}
+body {
+  box-sizing: border-box;
+  padding: 20px 60px;
+  font-family: 'Open Sans Condensed', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--dark-900);
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
