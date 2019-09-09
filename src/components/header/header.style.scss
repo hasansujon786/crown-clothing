@@ -22,9 +22,16 @@
       padding: 10px 15px;
       cursor: pointer;
       background-color: transparent;
+      font-weight: bold;
       border: none;
       font-family: inherit;
       font-size: inherit;
+      opacity: 0.75;
+      transition: opacity 100ms ease-out;
+      &:focus,
+      &:hover {
+        opacity: 1;
+      }
     }
   }
 }

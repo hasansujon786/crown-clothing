@@ -1,16 +1,18 @@
 :root {
-  --dark-900: #282c34;
+  --dark-900: #333;
 }
 * {
   box-sizing: inherit;
 }
 body {
+  overflow-y: scroll;
+  /* min-height: 100vh; */
   box-sizing: border-box;
   padding: 20px 60px;
   font-family: 'Open Sans Condensed', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: var(--dark-900);
+  /* background: var(--dark-900); */
 }
 
 a {

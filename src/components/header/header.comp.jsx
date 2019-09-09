@@ -18,9 +18,15 @@ const HeaderComp = ({ currentUser }) => {
           CONTACT
         </Link>
         {currentUser ? (
-          <button onClick={() => auth.signOut()} className='option'>
-            SIGN OUT
-          </button>
+          <>
+            <button onClick={() => auth.signOut()} className='option'>
+              SIGN OUT
+            </button>
+
+            {/* <Link to='/' className='option'>
+              {currentUser.displayName.toUpperCase()}
+            </Link> */}
+          </>
         ) : (
           <Link to='/signin' className='option'>
             SIGN IN
