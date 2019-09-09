@@ -1,10 +1,14 @@
-import React from 'react'
 import './header.style.scss'
+import React from 'react'
+import { connect } from 'react-redux'
 import { Link } from 'react-router-dom'
-import { ReactComponent as Logo } from './crown.svg'
+
 import { auth } from '../../firebase/firebase.utils'
+import { ReactComponent as Logo } from './crown.svg'
 
 const HeaderComp = ({ currentUser }) => {
+  console.log(currentUser)
+
   return (
     <div className='header'>
       <Link className='logo-container' to='/'>
@@ -19,13 +23,13 @@ const HeaderComp = ({ currentUser }) => {
         </Link>
         {currentUser ? (
           <>
+            <Link title={currentUser.email} to='/' className='option'>
+              {currentUser.displayName.toUpperCase()}
+            </Link>
+
             <button onClick={() => auth.signOut()} className='option'>
               SIGN OUT
             </button>
-
-            {/* <Link to='/' className='option'>
-              {currentUser.displayName.toUpperCase()}
-            </Link> */}
           </>
         ) : (
           <Link to='/signin' className='option'>
@@ -37,4 +41,8 @@ const HeaderComp = ({ currentUser }) => {
   )
 }
 
-export default HeaderComp
+const mapStateToProps = state => ({
+  currentUser: state.user.currentUser
+})
+
+export default connect(mapStateToProps)(HeaderComp)
