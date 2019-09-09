@@ -1,4 +1,4 @@
-import { Route, Switch } from 'react-router-dom'
+import { Route, Switch, Redirect } from 'react-router-dom'
 import React from 'react'
 import './App.style.css'
 import Header from './components/header/header.comp'
@@ -30,23 +30,31 @@ class App extends React.Component {
   }
 
   render() {
+    const { currentUser } = this.props
     return (
       <div className='App'>
         <Header />
         <Switch>
           <Route path='/' exact component={HomePage} />
           <Route path='/shop' component={Shop} />
-          <Route path='/signin' component={SignInSignUp} />
+          <Route
+            exact
+            path='/signin'
+            render={() => (currentUser ? <Redirect to='/' /> : <SignInSignUp />)}
+          />
         </Switch>
       </div>
     )
   }
 }
 
+const mapStateToProps = ({ user }) => ({
+  currentUser: user.currentUser
+})
 const mapDispatchToProps = dispatch => ({
   setCurrentUser: user => dispatch(setCurrentUser(user))
 })
 export default connect(
-  null,
+  mapStateToProps,
   mapDispatchToProps
 )(App)
