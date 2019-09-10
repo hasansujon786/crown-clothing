@@ -1,18 +1,24 @@
-import { Route, Switch, Redirect } from 'react-router-dom'
 import React from 'react'
 import './App.style.css'
-import Header from './components/header/header.comp'
-import HomePage from './pages/home/home.comp'
-import Shop from './pages/shop/shop.comp'
-import SignInSignUp from './pages/sign-in-sign-up/sign-in-sign-up.comp'
+
+// utills
+import { Route, Switch, Redirect } from 'react-router-dom'
 import { auth, createUserProfileDocument } from './firebase/firebase.utils'
 import { connect } from 'react-redux'
 import { setCurrentUser } from './redux/user/user.actions'
+
+// componets
+import Header from './components/header/header.comp'
+// pages
+import HomePage from './pages/home/home.comp'
+import Shop from './pages/shop/shop.comp'
+import SignInSignUp from './pages/sign-in-sign-up/sign-in-sign-up.comp'
 
 class App extends React.Component {
   unsubscribeFromAuth = null
   componentDidMount() {
     const { setCurrentUser } = this.props
+
     this.unsubscribeFromAuth = auth.onAuthStateChanged(async userAuth => {
       if (userAuth) {
         const userRef = await createUserProfileDocument(userAuth)
