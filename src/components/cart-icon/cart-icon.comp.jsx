@@ -13,7 +13,6 @@ const CartIcon = ({ toggleCartHidden, itemCount }) => {
   return (
     <div onClick={toggleCartHidden} className='cart-icon'>
       <ShoppinIcon className='shopping-icon' />
-      {console.log(Math.random())}
       <span className='item-count'>{itemCount}</span>
     </div>
   )
