@@ -1,4 +1,4 @@
-import './cart-icon.style.scss'
+import './Cart-Icon.style.scss'
 import React from 'react'
 
 // redux

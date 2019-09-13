@@ -1,8 +1,9 @@
-import './sigin-in.style.scss'
 import React, { Component } from 'react'
-import FromInput from '../../components/form-input/form-input.comp'
-import Button from '../../components/custom-button/custom-button.comp'
+import './Sign-In.style.scss'
 import { auth, signInWithGoogle } from '../../firebase/firebase.utils'
+// components
+import FromInput from '../../components/Form-Input/Form-Input.comp'
+import Button from '../../components/Custom-Button/Custom-Button.comp'
 
 class SignIn extends Component {
   constructor(props) {

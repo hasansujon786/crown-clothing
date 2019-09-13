@@ -2,7 +2,7 @@ import React from 'react'
 import { Route } from 'react-router-dom'
 
 // components
-import CollectionOverview from '../../components/collection-overview/collection-overview.comp'
+import CollectionOverview from '../../components/Collection-Overview/Collection-Overview.comp'
 import Collection from '../../components/Collection/Collection.comp'
 
 const Shop = ({ match }) => {

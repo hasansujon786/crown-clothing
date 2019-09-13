@@ -5,7 +5,7 @@ import { connect } from 'react-redux'
 import { createStructuredSelector } from 'reselect'
 import { selectCartItems, selectCartTotalPrice } from '../../redux/cart/cart.selectors'
 // components
-import CheckoutItem from '../../components/checkout-item/checkout-item.comp'
+import CheckoutItem from '../../components/Checkout-Item/Checkout-Item.comp'
 
 const CheckOut = ({ cartItems, total }) => {
   return (

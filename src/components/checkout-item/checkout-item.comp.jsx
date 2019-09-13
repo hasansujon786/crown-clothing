@@ -1,5 +1,5 @@
 import React from 'react'
-import './checkout-item.style.scss'
+import './Checkout-Item.style.scss'
 // redux
 import { connect } from 'react-redux'
 import { clearItemFromCart, addItem, removeItem } from '../../redux/cart/cart.actions'

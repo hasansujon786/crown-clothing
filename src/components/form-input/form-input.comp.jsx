@@ -1,4 +1,4 @@
-import './form-input.style.scss'
+import './Form-Input.style.scss'
 
 import React from 'react'
 
