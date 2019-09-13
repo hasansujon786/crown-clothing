@@ -1,4 +1,4 @@
-import './header.style.scss'
+import './Header.style.scss'
 import React from 'react'
 // redux
 import { connect } from 'react-redux'
@@ -10,8 +10,8 @@ import { Link } from 'react-router-dom'
 import { auth } from '../../firebase/firebase.utils'
 // components
 import { ReactComponent as Logo } from './crown.svg'
-import CartIcon from '../cart-icon/cart-icon.comp'
-import CartDropdown from '../cart-dropdown/cart-dropdown.comp'
+import CartIcon from '../Cart-Icon/Cart-Icon.comp'
+import CartDropdown from '../Cart-Dropdown/Cart-Dropdown.comp'
 
 const HeaderComp = ({ currentUser, hidden }) => {
   return (

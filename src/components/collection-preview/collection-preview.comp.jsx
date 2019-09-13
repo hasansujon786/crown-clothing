@@ -1,8 +1,8 @@
 import React from 'react'
-import './collection-preview.style.scss'
+import './Collection-Preview.style.scss'
 import { Link } from 'react-router-dom'
 // components
-import CollectionItem from '../collection-item/collection-item.comp'
+import CollectionItem from '../Collection-Item/Collection-Item.comp'
 
 const CollectionPreview = ({ title, routeName, items }) => {
   return (

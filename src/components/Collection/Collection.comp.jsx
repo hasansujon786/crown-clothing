@@ -4,7 +4,7 @@ import './Collection.style.scss'
 import { connect } from 'react-redux'
 import { selectOneCollection } from '../../redux/shop/shop.selectors'
 // components
-import CollectionPreview from '../collection-item/collection-item.comp'
+import CollectionPreview from '../Collection-Item/Collection-Item.comp'
 
 const Collection = ({ collection: { title, items } }) => {
   return (

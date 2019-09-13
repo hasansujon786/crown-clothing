@@ -1,6 +1,6 @@
-import './sign-up.style.scss'
 import React, { Component } from 'react'
-import FromInput from '../form-input/form-input.comp'
+import './Sign-Up.style.scss'
+import FromInput from '../Form-Input/Form-Input.comp'
 import Button from '../custom-button/custom-button.comp'
 import { auth, createUserProfileDocument } from '../../firebase/firebase.utils'
 

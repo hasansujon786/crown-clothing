@@ -9,7 +9,7 @@ import { setCurrentUser } from './redux/user/user.actions'
 // utills
 import { auth, createUserProfileDocument } from './firebase/firebase.utils'
 // componets
-import Header from './components/header/header.comp'
+import Header from './components/Header/Header.comp'
 // pages
 import HomePage from './pages/home/home.comp'
 import Shop from './pages/shop/shop.comp'

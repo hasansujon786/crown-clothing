@@ -1,5 +1,5 @@
 import React from 'react'
-import './collection-overview.style.scss'
+import './Collection-Overview.style.scss'
 
 // redux
 import { connect } from 'react-redux'
@@ -7,7 +7,7 @@ import { createStructuredSelector } from 'reselect'
 import { selectCollectionsAsArray } from '../../redux/shop/shop.selectors'
 
 // components
-import CollectionPreview from '../../components/collection-preview/collection-preview.comp'
+import CollectionPreview from '../../components/Collection-Preview/Collection-Preview.comp'
 
 const CollectionOverview = ({ collections }) => {
   return (
